@@ -36,3 +36,209 @@
     transform: rotate(360deg);
   }
 }
+
+/* web css */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#logo img{
+			width: 100px;
+			height: 100px;
+			margin:6px 23px ;
+
+ }
+ #navbar{
+ 	display: flex;
+ 	align-items: center;
+ 	position: relative;
+  top: 0px;
+ }
+ #navbar ul{
+ 	display: flex;
+ 	font-family: 'baloo bhai' , cursive;
+ }
+ #navbar::before{
+ 	content: "";
+ 	position: absolute;
+ 	background-color: black;
+ 	height: 100%;
+ 	width: 100%;
+ 	z-index: -1;
+ 	opacity: 0.7;
+
+ }
+ #navbar ul li{
+ 	list-style: none;
+ 	font-size: bold;
+ }
+ #navbar ul li a{
+ 	color: white;
+ 	text-decoration: none;
+ 	padding:3px 23px;
+ 	display: block;
+ 	border-radius: 20px;
+ }
+ #navbar ul li a:hover{
+  background-color: white;
+  color: black;
+ }
+ .marquee h1{
+          color: white;
+ }
+ #home{
+ 	display: flex;
+ 	flex-direction: column;
+ 	padding: 3px 200px;
+ 	align-items: center;
+ 	justify-content: center;
+ 	height: 340px;
+ }
+ #home::before{
+ 	content: "";
+ 	background: url('../public/img/harry background.jpg') no-repeat center center/cover;
+ 	position: absolute;
+ 	z-index: -1;
+ 	opacity: 0.98;
+ 	height: 470px;
+ 	width: 100%;
+  top: 0px;
+  left: 0px;
+ }
+ #home h1{
+ 	color: white;
+ 	text-align: center;
+ 	font-family:'bree serif' , serif;
+ }
+ #home p{
+ 	color: white;
+ 	/*text-align: center;*/
+ 	font-size: 1.5rem;
+ 	font-family:'bree serif' , serif;
+ }
+ /*services section*/
+ #Services-contanir h1{
+ 	text-align: center;
+ }#services h2{
+ 	text-align: center;
+ }
+
+ #services{
+ 	margin: 34px;
+ 	display: flex;
+ }
+ #services .box{
+    border: 2px solid brown;
+    border-radius: 23px;
+    padding: 30px;
+    margin: 0px 6px;  
+    background: #f2f2f2;
+    margin-bottom: 20px;     
+ }
+ #services .box img{
+ 	height: 160px;
+ 	margin: auto;
+ 	display: block;
+ }
+ #services .box p{
+  font-family:'bree serif' , serif;
+ }
+.box:hover{
+  transform: scale(1.2);
+ }
+ /*client section*/
+ #client-section{
+      height: 344px;
+      position: relative;
+ }
+ #client-section::before{
+      content: "";
+      background: url('../public/img/bg.jpg') no-repeat center center/cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.4;
+ }
+ #client{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ #client img{
+  height:124px ;
+ }
+ .client-item{
+  padding: 34px;
+ }
+/*contect section*/
+#Contact{
+  position: relative;
+}
+#Contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:url('../public/img/contact us.jpg') no-repeat center center/cover ;
+  z-index: -1;
+  opacity: 0.4;
+}
+#Contect-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 34px;
+ /* display: block;
+  width: 400px;
+  margin: auto;*/
+}
+#Contect-box form{
+  width: 40%;
+}
+#Contect-box label{
+  font-size: 1.3rem;
+  font-family:'bree serif' , serif;
+}
+#Contect-box input,
+#Contect-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+   /*utilatily classes*/
+
+ .h-primary{
+  font-family:'bree serif' , serif;
+ 	padding: 12px;
+ 	font-size: 3.8rem;
+ }
+ .h-secondary{
+  font-family:'bree serif' , serif;
+ 	padding: 12px;
+ 	font-size: 2.3rem;
+ }
+ .center{
+ 	text-align: center;
+ }
+ .btn{
+ 	padding: 6px 23px;
+ 	margin: 17px 17px;
+ 	background: brown;
+ 	border: 2px solid white;
+ 	color: white;
+ 	font-size: 1.5rem;
+ 	border-radius: 15px;
+ 	cursor: pointer;
+ }
+ .btn:hover{
+ 	color: black;
+ 	background: white;
+ }
